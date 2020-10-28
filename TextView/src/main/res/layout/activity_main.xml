@@ -242,8 +242,17 @@
                 android:layout_height="wrap_content"
                 android:text="[手机号码隐藏]Test!17610071263"
                 android:textColor="@color/black"
-                android:textIsSelectable="true"
                 android:textSize="14sp" />
+
+
+            <com.laiyu.ui.ExpandableTextView
+                android:id="@+id/text13"
+                android:layout_margin="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toTopOf="parent"/>
         </LinearLayout>
     </ScrollView>
 

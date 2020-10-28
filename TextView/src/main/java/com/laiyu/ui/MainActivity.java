@@ -1,6 +1,7 @@
 package com.laiyu.ui;
 
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.core.content.ContextCompat;
 
 import android.content.res.AssetManager;
 import android.graphics.BlurMaskFilter;
@@ -21,6 +22,7 @@ import android.text.style.MaskFilterSpan;
 import android.text.style.ScaleXSpan;
 import android.text.style.SuperscriptSpan;
 import android.text.style.URLSpan;
+import android.util.DisplayMetrics;
 import android.view.View;
 import android.widget.TextView;
 import android.widget.Toast;
@@ -42,6 +44,7 @@ public class MainActivity extends AppCompatActivity {
     private TextView text10;
     private TextView text11;
     private TextView text12;
+    private ExpandableTextView text13;
     boolean isExpand = false;
 
     @Override
@@ -155,6 +158,22 @@ public class MainActivity extends AppCompatActivity {
         String newStr = strFor + "****" + strEnd;
         text12.setText(newStr);
 
+        DisplayMetrics dm = new DisplayMetrics();
+        getWindowManager().getDefaultDisplay().getMetrics(dm);
+        int viewWidth = dm.widthPixels - Utils.dp2px(this, 20f);
+        text13.initWidth(viewWidth);
+        text13.setMaxLines(3);
+        text13.setHasAnimation(true);
+        text13.setCloseInNewLine(true);
+        text13.setOpenSuffixColor(ContextCompat.getColor(this,R.color.black));
+        text13.setCloseSuffixColor(ContextCompat.getColor(this,R.color.colorAccent));
+        text13.setOriginalText("在全球，随着Flutter被越来越多的知名公司应用在自己的商业APP中，" +
+                "Flutter这门新技术也逐渐进入了移动开发者的视野，尤其是当Google在2018年IO大会上发布了第一个" +
+                "Preview版本后，国内刮起来一股学习Flutter的热潮。\n\n为了更好的方便帮助中国开发者了解这门新技术" +
+                "，我们，Flutter中文网，前后发起了Flutter翻译计划、Flutter开源计划，前者主要的任务是翻译" +
+                "Flutter官方文档，后者则主要是开发一些常用的包来丰富Flutter生态，帮助开发者提高开发效率。而时" +
+                "至今日，这两件事取得的效果还都不错！"
+        );
     }
 
     private void intiView() {
@@ -170,5 +189,6 @@ public class MainActivity extends AppCompatActivity {
         text10 = findViewById(R.id.text10);
         text11 = findViewById(R.id.text11);
         text12 = findViewById(R.id.text12);
+        text13 = findViewById(R.id.text13);
     }
 }
