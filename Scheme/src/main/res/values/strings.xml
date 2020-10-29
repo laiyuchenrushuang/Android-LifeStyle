@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">Scheme</string>
+    <!--
+            其中%后面是占位符的位置，从1开始，
+              $ 后面是填充数据的类型
+             %d ：表示整数型；
+             %f ：表示浮点型，其中f前面的.2表示小数的位数
+             %s ：表示字符串
+    -->
+    <string name="receive">收到的内容:%1$s</string>
+    <string name="start">跳转到</string>
+</resources>
