@@ -245,14 +245,24 @@
                 android:textSize="14sp" />
 
 
-            <com.laiyu.ui.ExpandableTextView
-                android:id="@+id/text13"
-                android:layout_margin="10dp"
+            <TextView
+                android:id="@+id/text14"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:background="@drawable/xia_hua_xian"
+                android:gravity="center"
+                android:text="自带下划线的TextView"
+                android:textColor="@color/black"
+                android:textSize="14sp" />
+
+            <com.laiyu.ui.ExpandableTextView
+                android:id="@+id/text13"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
                 app:layout_constraintLeft_toLeftOf="parent"
                 app:layout_constraintRight_toRightOf="parent"
-                app:layout_constraintTop_toTopOf="parent"/>
+                app:layout_constraintTop_toTopOf="parent" />
         </LinearLayout>
     </ScrollView>
 

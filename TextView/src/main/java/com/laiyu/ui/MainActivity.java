@@ -45,6 +45,7 @@ public class MainActivity extends AppCompatActivity {
     private TextView text11;
     private TextView text12;
     private ExpandableTextView text13;
+    private TextView text14;
     boolean isExpand = false;
 
     @Override
@@ -190,5 +191,6 @@ public class MainActivity extends AppCompatActivity {
         text11 = findViewById(R.id.text11);
         text12 = findViewById(R.id.text12);
         text13 = findViewById(R.id.text13);
+        text14 = findViewById(R.id.text14);
     }
 }
