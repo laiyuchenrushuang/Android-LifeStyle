@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        tools:ignore="MissingConstraints">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <EditText
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@null"
+                android:hint="去下划线" />
+
+            <EditText
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:hint="密码类型"
+                android:inputType="textPassword" />
+
+            <EditText
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:digits="ABC"
+                android:hint="限制输入类型ABC"></EditText>
+
+            <EditText
+                android:id="@+id/edit1"
+                android:layout_width="100dp"
+                android:layout_height="wrap_content" />
+
+            <EditText
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:hint="设键盘数字类型"
+                android:inputType="number" />
+
+            <EditText
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:hint="设置键盘显示搜索按钮"
+                android:imeOptions="actionSearch" />
+
+            <EditText
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:hint="设置键盘显示完成按钮"
+                android:imeOptions="actionDone" />
+
+            <EditText
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:hint="输入跳转指定的editX"
+                android:imeOptions="actionNext"
+                android:nextFocusForward="@id/edit2" />
+
+            <EditText
+                android:id="@+id/edit2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:hint="我是editX" />
+
+            <EditText
+                android:layout_width="150dp"
+                android:layout_height="50dp"
+                android:background="@drawable/yangshi"
+                android:hint="自定义样式" />
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="改变下划线颜色和光标颜色"
+                android:theme="@style/MyEditText" />
+
+            <EditText
+                android:id="@+id/edit3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="大小写自动切换" />
+
+            <EditText
+                android:id="@+id/edit4"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="设置光标的位置在末尾" />
+
+            <EditText
+                android:id="@+id/edit5"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="获取焦点禁止弹键盘" />
+
+            <EditText
+                android:id="@+id/edit6"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="文本过滤器" />
+
+            <EditText
+                android:id="@+id/edit7"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="过滤表情" />
+        </LinearLayout>
+    </ScrollView>
+</androidx.constraintlayout.widget.ConstraintLayout>
