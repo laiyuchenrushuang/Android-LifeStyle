@@ -1,0 +1,4 @@
+<resources>
+    <string name="app_name">battery</string>
+    <string name="current_battery">当前电量详情:\n%1$s</string>
+</resources>
