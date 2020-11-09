@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:id="@+id/text_json"
+            android:layout_width="match_parent"
+            android:layout_height="220dp"
+            android:background="@color/black"
+            android:padding="10dp"
+            android:text="json"
+            android:textColor="@color/white"
+            android:textSize="13sp" />
+
+        <Button
+            android:id="@+id/changeBtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:alpha="0.5"
+            android:text="切换json" />
+
+        <Button
+            android:id="@+id/exbtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/text_json"
+            android:text="解析" />
+
+        <TextView
+            android:id="@+id/text_result"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/exbtn"
+            android:background="@color/black"
+            android:padding="10dp"
+            android:textColor="@color/white" />
+    </RelativeLayout>
+</merge>
