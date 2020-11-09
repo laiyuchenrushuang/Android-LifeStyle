@@ -15,3 +15,5 @@
 5.手机系统电池信息API
 
 6.手势密码
+
+7.Sharedpreference基本使用
